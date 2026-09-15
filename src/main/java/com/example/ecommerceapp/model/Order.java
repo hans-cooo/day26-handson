@@ -1,5 +1,7 @@
 package com.example.ecommerceapp.model;
 
+import java.io.Serializable;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -8,12 +10,12 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "orders")
-public class Order {
+public class Order implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    private static final long serialVersionUID = 1L;
     private Long productId;
     private int quantity;
     private String customer;
