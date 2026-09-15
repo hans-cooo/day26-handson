@@ -3,7 +3,16 @@ services:
     build: .
     container_name: ecommerce_tomcat
     ports:
-      - "8081:8080"
+      - "8080:8080"
+      - "9090:9090"
+    environment:
+      CATALINA_OPTS: >-
+        -Dcom.sun.management.jmxremote
+        -Dcom.sun.management.jmxremote.port=9090
+        -Dcom.sun.management.jmxremote.rmi.port=9090
+        -Dcom.sun.management.jmxremote.authenticate=false
+        -Dcom.sun.management.jmxremote.ssl=false
+        -Djava.rmi.server.hostname=localhost
   redis:
     image: redis:alpine
     container_name: ecommerce-redis
