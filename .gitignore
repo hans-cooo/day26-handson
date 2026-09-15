@@ -1,0 +1,71 @@
+# Maven
+
+target/
+.mvn/wrapper/maven-wrapper.jar
+
+# Maven Wrapper
+
+.mvn/wrapper/maven-wrapper.properties
+
+# Spring Boot
+
+*.log
+
+# Environment / secrets
+
+.env
+.env.*
+!.env.example
+
+# IDE - Spring Tool Suite / Eclipse
+
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# IDE - IntelliJ IDEA
+
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# IDE - NetBeans
+
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# IDE - VS Code
+
+.vscode/
+
+# Gradle / build output
+
+build/
+.gradle/
+
+# OS generated files
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# H2 local database files
+
+*.db
+*.mv.db
+*.trace.db

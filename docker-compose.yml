@@ -1,0 +1,6 @@
+services:
+  tomcat:
+    build: .
+    container_name: ecommerce_tomcat
+    ports:
+      - "8080:8080"
